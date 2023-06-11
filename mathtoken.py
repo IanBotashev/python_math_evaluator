@@ -10,6 +10,7 @@ class TokenType(Enum):
     IGNORE = 5
     RIGHT_PARENTHESIS = 6
     LEFT_PARENTHESIS = 7
+    EXPONENT = 8
 
 
 class Token:

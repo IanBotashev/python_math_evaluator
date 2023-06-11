@@ -21,6 +21,7 @@ token_map = [
     TokenMapItem(TokenType.MULTIPLICATION, ["*"], False),
     TokenMapItem(TokenType.LEFT_PARENTHESIS, ["("], False),
     TokenMapItem(TokenType.RIGHT_PARENTHESIS, [")"], False),
+    TokenMapItem(TokenType.EXPONENT, ["^"], False),
 ]
 
 

@@ -32,3 +32,6 @@ class Interpreter:
 
         elif node.op == Operation.NEGATIVE:
             return -node.a
+
+        elif node.op == Operation.EXPONENT:
+            return self.evaluate(node.a) ** self.evaluate(node.b)

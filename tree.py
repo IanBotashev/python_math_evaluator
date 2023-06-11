@@ -11,6 +11,7 @@ class Operation(Enum):
     NUMBER = 5
     NEGATIVE = 6
     POSITIVE = 7
+    EXPONENT = 8
 
 
 class Node:

@@ -8,6 +8,7 @@ operation_map = {
     TokenType.SUBTRACTION: Operation.SUBTRACTION,
     TokenType.MULTIPLICATION: Operation.MULTIPLICATION,
     TokenType.DIVISION: Operation.DIVISION,
+    TokenType.EXPONENT: Operation.EXPONENT,
 }
 
 
@@ -55,7 +56,7 @@ class Parser:
     """
     def find_term(self):
         result = self.find_factor()
-        while self.current_token is not None and self.current_token.type in [TokenType.MULTIPLICATION, TokenType.DIVISION]:
+        while self.current_token is not None and self.current_token.type in [TokenType.MULTIPLICATION, TokenType.DIVISION, TokenType.EXPONENT]:
             operation = operation_map[self.current_token.type]
             self.advance()
             result = Node(result, self.find_factor(), operation)
