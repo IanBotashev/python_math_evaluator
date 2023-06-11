@@ -7,6 +7,7 @@ Currently, the following syntax is supported:
 - Basic operations; `+, -, /, *`   
 - Parentheses; `()`  
 - Negation, turning an expression into a negative; `-`  
+- Exponentiation; `^`  
 
 ## Running
 Start `main.py` with it's passed-in argument being the expression to evaluate, i.e. `python3 main.py "2 + 2"`.  
