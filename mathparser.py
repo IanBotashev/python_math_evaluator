@@ -32,6 +32,7 @@ class Parser:
     def parse(self):
         result = self.find_expression()
 
+        # We have some weird leftover statements not doing anything, raise syntax error.
         if self.current_token is not None:
             raise InvalidSyntax()
 

@@ -22,8 +22,3 @@ class Token:
             return f"Token({self.type}, {self.value})"
         else:
             return f"Token({self.type})"
-
-
-if __name__ == "__main__":
-    example = Token(TokenType.ADDITION)
-    print(example)

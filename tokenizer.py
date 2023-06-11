@@ -75,9 +75,3 @@ class Tokenizer:
                 return token_item
 
         raise InvalidCharacter(f"Illegal character '{character}'")
-
-
-if __name__ == "__main__":
-    print(" ".join(sys.argv[1:]))
-    tokenizer = Tokenizer(" ".join(sys.argv[1:]))
-    print(tokenizer.tokenize())
