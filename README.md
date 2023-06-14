@@ -11,4 +11,4 @@ Currently, the following syntax is supported:
 
 ## Running
 Start `main.py` with it's passed-in argument being the expression to evaluate, i.e. `python3 main.py "2 + 2"`.  
-While the quotation marks are not required, unintended bugs may happen from the shell, for example, expanding wildcards.  
+While the quotation marks are not required, unintended bugs may happen from the shell, for example, expanding wildcards.
